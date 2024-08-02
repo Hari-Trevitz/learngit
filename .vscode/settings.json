@@ -1,0 +1,45 @@
+{
+    "[markdown]": {
+        // "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    // Doxygen documentation generator set
+    "doxdocgen.file.copyrightTag": [
+        "@copyright Copyright (C) {year}, HITCRT_VISION, all rights reserved."
+    ],
+    "doxdocgen.file.customTag": [
+        "@par 修改日志:",
+        "<table>",
+        "<tr><th>Date <th>Author <th>Description",
+        "<tr><td>{date} <td>{author}<td>",
+        "</table>",
+    ],
+    "doxdocgen.file.fileOrder": [
+        "file",
+        "brief",
+        "author",
+        "date",
+        "empty",
+        "copyright",
+        "empty",
+        "custom"
+    ],
+    "doxdocgen.file.fileTemplate": "@file {name}",
+    "doxdocgen.generic.authorEmail": "My email",
+    "doxdocgen.generic.authorName": "My name",
+    "doxdocgen.generic.authorTag": "@author {author} ({email})",
+    "doxdocgen.generic.order": [
+        "brief",
+        "tparam",
+        "param",
+        "return",
+        "author"
+    ],
+    "doxdocgen.generic.paramTemplate": "@param[in]{indent:8} {param}{indent:25}My Param doc",
+    "doxdocgen.generic.returnTemplate": "@return {type} ",
+    "doxdocgen.generic.splitCasingSmartText": true,
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && g++ -std=c++17 *.cpp -g -o $fileNameWithoutExt &&$dir$fileNameWithoutExt",
+    },
+    "code-runner.runInTerminal": true,
+}
